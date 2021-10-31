@@ -1,0 +1,18 @@
+/* Разбиение main на части с помощью grid */
+.main {
+    display: grid;
+    grid-template-rows: min-content min-content 1fr;
+    grid-template-areas: "main__section""main__point""main__part-3";
+}
+
+.main__section {
+    grid-area: main__section;
+}
+
+.main__point {
+    grid-area: main__point;
+}
+
+.main__part-3 {
+    grid-area: main__part-3;
+}

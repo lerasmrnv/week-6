@@ -1,0 +1,23 @@
+.app {
+    display: grid;
+    grid-template-rows: minmax(min-content, 7vh) fit-content(100vh) 10vh;
+    grid-template-areas: "header"
+        "main"
+        "footer";
+
+}
+
+.header {
+    grid-area: header;
+
+    background-color: blanchedalmond;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #F6F4EC;
+}

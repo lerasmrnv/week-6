@@ -1,0 +1,41 @@
+1. Это гибкая единица измерения, которая высчитывается исходя из доступного пространства контейнера.
+2. можно использовать grid-tempplate-columns: 1fr 1fr 1fr 1fr 1fr
+grid-tempplate-columns: repeat(5, 20%)
+3. С помощью auto-fill при указании длины мы говорим браузеру, что я бы заполнил максимальное количество колонок, с учетомзаданной ширины.
+auto-fit ведет себя почти также как и auto-fill, но он делает ширину пустых ячеек равной нулю.
+4. display: grid;
+    grid-template-columns: 100px 30% 1fr;
+    grid-template-rows: 200px 100px;
+    gap: 5px;
+5. с помощью space-between
+6. Это пространство внутри grid-контейнера, он захватывает пространство как одной ячейки так и нескольких.
+7. .app {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 200px 100px;
+    grid-template-areas: "section-1 section-1"
+        "section-2 section-3";
+    gap: 5px;
+}
+
+.section-1 {
+    grid-area: section-1;
+    background-color: blueviolet;
+}
+
+.section-2 {
+    grid-area: section-2;
+    background-color: rgb(43, 226, 171);
+}
+
+.section-3 {
+    grid-area: section-3;
+    background-color: rgb(226, 43, 195);
+}
+8. используя auto-fill
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+9. Именновынные линии- это линии грида, им дают имена в квадратных скобках [], между для именами указывается ширина столбца или высота строки, которые находятся между этими линиями.
+grid-template-columns: [col1start] 1fr [col1end] 10px
+                        [col2start] 1fr [col2end] 10px
+10. используя repeat 
+grid-tempplate-columns: repeat(12, 1fr)

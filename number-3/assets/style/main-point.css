@@ -1,0 +1,59 @@
+/* Создание grid для товаров */
+.main__point {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "main__point__1 main__point__2 main__point__3";
+    /* Убираем добавочные отступы */
+    padding: 0;
+    margin: 0;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    gap: 10px;
+
+    background-color: #F6F4EC;
+}
+
+.main__point__1 {
+    grid-area: main__point__1;
+}
+
+.main__point__2 {
+    grid-area: main__point__2;
+}
+
+.main__point__3 {
+    grid-area: main__point__3;
+}
+
+/* Убираем декорирование списка */
+.main__point__1,
+.main__point__2,
+.main__point__3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin: 3%;
+}
+
+/* Добавим отступ после каритнки */
+.main__point__1__name,
+.main__point__2__name,
+.main__point__3__name {
+    padding-top: 10px;
+}
+
+/* Отступ и Шрифт  */
+.main__point__1__name,
+.main__point__1__price,
+.main__point__2__name,
+.main__point__2__price,
+.main__point__3__name,
+.main__point__3__price {
+    margin: 5px;
+
+    color: #B45F4D;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}

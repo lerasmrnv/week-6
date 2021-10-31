@@ -1,0 +1,64 @@
+/* Выранивание главной части */
+.main__section {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+/* Настройка для кнопки */
+.main__section__button {
+    background-image: url(./../image/fon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+}
+
+.main__section__button__shop-now {
+    min-width: 128px;
+    min-height: 48px;
+    justify-content: center;
+
+    align-self: flex-end;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #B45F4D;
+    border: none;
+}
+
+/* Часть с текстом */
+.main__text {
+    padding: 2%;
+
+    background-color: #A9AE8D;
+}
+
+/* Изменение margina для заголовков */
+.main__section__text-1,
+.main__section__text-2,
+.main__section__text-3 {
+    margin: 15px;
+}
+
+/* Шрифт */
+.main__section__text-1,
+.main__section__text-2,
+.main__section__text-3,
+.main__section__button__shop-now {
+    color: white;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+.main__section__text-1 {
+    font-size: 18px;
+}
+
+.main__section__text-2 {
+    font-size: 33px;
+}
+
+.main__section__text-3 {
+    font-size: 16px;
+}
